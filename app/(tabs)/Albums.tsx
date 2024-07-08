@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 const Albums = () => {
   return (
     <View>
-      <Text>Albums</Text>
+      <Text>Albums page</Text>
     </View>
   );
 };
