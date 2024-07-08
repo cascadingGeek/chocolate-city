@@ -1,4 +1,4 @@
-import { ActivityIndicator, Text, View } from "react-native";
+import { ActivityIndicator, Text, View, ScrollView } from "react-native";
 import { styled } from "nativewind";
 import { useEffect, useState } from "react";
 import Artist from "@/utils/types";
@@ -9,6 +9,7 @@ import { fetchArtists } from "@/utils/fetchAction";
 const Artists = () => {
   const StyledView = styled(View);
   const StyledText = styled(Text);
+  const StyledScrollView = styled(ScrollView);
 
   const [artists, setArtists] = useState<Artist[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -39,7 +40,7 @@ const Artists = () => {
           </StyledText>
         </StyledView>
       ) : (
-        <>
+        <StyledScrollView>
           <StyledView className="mb-10">
             <StyledText className="text-white font-bold text-lg px-5 mb-5">
               Top Artists
@@ -53,9 +54,10 @@ const Artists = () => {
             </StyledText>
             <AllArtists artists={artists} />
           </StyledView>
-        </>
+        </StyledScrollView>
       )}
     </StyledView>
   );
 };
+
 export default Artists;

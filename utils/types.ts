@@ -33,3 +33,11 @@ export default interface AllAlbums {
   id: number;
   title: string;
 }
+
+export default interface AllTweets {
+  postId: number;
+  id: number;
+  name: string;
+  email: string;
+  body: string;
+}

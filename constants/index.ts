@@ -5,6 +5,7 @@ import logo from "../assets/images/logo.png";
 import cover from "../assets/images/cover.jpg";
 import artistcover from "../assets/images/artist-cover.jpg";
 import albumcover from "../assets/images/album-cover.jpg";
+import user from "../assets/images/user.jpg";
 
 export default {
   home,
@@ -14,4 +15,5 @@ export default {
   cover,
   artistcover,
   albumcover,
+  user,
 };
