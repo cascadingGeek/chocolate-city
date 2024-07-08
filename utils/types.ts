@@ -27,3 +27,9 @@ export default interface Artist {
   website: string;
   company: Company;
 }
+
+export default interface AllAlbums {
+  userId: number;
+  id: number;
+  title: string;
+}
